@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor
+        xmlns="https://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.1.0"
+        name="spark-scala-archetype">
+
+  <requiredProperties>
+    <requiredProperty key="package">
+      <defaultValue>ai.raics.${artifactId}</defaultValue>
+    </requiredProperty>
+  </requiredProperties>
+
+  <fileSets>
+    <fileSet filtered="true" encoding="UTF-8">
+      <directory></directory>
+      <includes>
+        <include>pom.xml</include>
+        <include>README.md</include>
+      </includes>
+    </fileSet>
+
+    <fileSet filtered="true" encoding="UTF-8">
+      <directory>src/main/scala</directory>
+      <includes>
+        <include>**/*.scala</include>
+      </includes>
+    </fileSet>
+
+    <fileSet filtered="true" encoding="UTF-8">
+      <directory>src/test/scala</directory>
+      <includes>
+        <include>**/*.scala</include>
+      </includes>
+    </fileSet>
+
+    <fileSet filtered="true" encoding="UTF-8">
+      <directory>src/test/resources</directory>
+      <includes>
+        <include>**/*</include>
+      </includes>
+    </fileSet>
+  </fileSets>
+</archetype-descriptor>
