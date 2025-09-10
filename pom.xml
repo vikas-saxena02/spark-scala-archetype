@@ -12,8 +12,7 @@
   <packaging>maven-archetype</packaging>
 
   <name>spark-scala-archetype</name>
-  <description>Maven archetype for Spark 3.5.5 + Scala 2.12.18 with ScalaTest and SparkPi sample</description>
-  <url>https://example.com/spark-scala-archetype</url>
+  <description>Maven archetype for Spark</description>
 
   <licenses>
     <license>
