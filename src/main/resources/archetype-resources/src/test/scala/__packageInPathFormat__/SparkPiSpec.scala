@@ -1,4 +1,4 @@
-package ${package}
+package com.vikas
 
 import org.apache.spark.sql.SparkSession
 import org.scalatest.funsuite.AnyFunSuite
@@ -27,7 +27,7 @@ class SparkPiSpec extends AnyFunSuite with BeforeAndAfterAll {
   }
 
   test("SparkPi.computePi is deterministic and close to Math.PI") {
-    val pi = SparkPi.computePi(spark, samples = 200_000L, partitions = 4, seed = 7L)
+    val pi = SparkPi.computePi(spark, 20000)
     val error = math.abs(pi - Math.PI)
     assert(error < 0.03, s"Estimated pi=$pi is too far from ${Math.PI}")
   }
