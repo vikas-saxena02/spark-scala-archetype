@@ -1,0 +1,27 @@
+# OS
+.DS_Store
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# Maven
+target/
+.mvn/wrapper/maven-wrapper.jar
+
+# Scala/Metals
+.bsp/
+.metals/
+.scala-build/
+.worksheet/
+.bloop/
+
+# Spark local artifacts
+derby.log
+.metastore_db/
+spark-warehouse/
+
+# Logs
+logs/
+*.log

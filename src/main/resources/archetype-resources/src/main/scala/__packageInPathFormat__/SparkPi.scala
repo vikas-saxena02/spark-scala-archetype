@@ -5,7 +5,7 @@ import org.apache.spark.sql.SparkSession
 object SparkPi {
 
   def computePi(spark: SparkSession,
-                samples: Long = 1_000_000L,
+                samples: Long = 1000000L,
                 partitions: Int = math.max(2, spark.sparkContext.defaultParallelism),
                 seed: Long = 1L): Double = {
     val sc = spark.sparkContext
@@ -39,7 +39,7 @@ object SparkPi {
       .appName("SparkPi")
       .getOrCreate()
 
-    val samples    = if (args.length > 0) args(0).toLong else 1_000_000L
+    val samples    = if (args.length > 0) args(0).toLong else 1000000L
     val partitions = if (args.length > 1) args(1).toInt  else math.max(2, spark.sparkContext.defaultParallelism)
     val seed       = if (args.length > 2) args(2).toLong else 1L
 
