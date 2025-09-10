@@ -18,14 +18,6 @@
       </includes>
     </fileSet>
 
-    <fileSet filtered="false" encoding="UTF-8">
-      <directory></directory>
-      <includes>
-	<include>.gitignore</include>
-      </includes>
-    </fileSet>
-
-
     <fileSet filtered="true" encoding="UTF-8">
       <directory>src/main/scala</directory>
       <includes>
