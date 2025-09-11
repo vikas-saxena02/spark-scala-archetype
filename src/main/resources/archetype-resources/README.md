@@ -14,10 +14,11 @@ Spark (Scala) starter generated from **spark-scala-archetype**.
 mvn -q clean test
 ```
 
-## Run (via spark-submit)
+## Generating a Sample Project
 
 ```bash
-spark-submit   --class ${package}.SparkPi   --master local[2]   target/${artifactId}-${version}.jar 200000 4 7
+ mvn -q archetype:generate \
+  -DarchetypeGroupId=ai.raics \
+  -DarchetypeArtifactId=spark-scala-archetype \
+  -DarchetypeVersion=1.0.0 
 ```
-
-> Spark dependencies are marked `provided`, as is typical for `spark-submit`.
