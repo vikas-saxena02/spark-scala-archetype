@@ -11,8 +11,10 @@
   <version>1.0.0</version>
   <packaging>maven-archetype</packaging>
 
+  <inceptionYear>2025</inceptionYear>
   <name>spark-scala-archetype</name>
-  <description>Maven archetype for Spark</description>
+  <description>Maven archetype for Spark application development</description>
+  <url>https://github.com/vikas-saxena02/spark-scala-archetype</url>
 
   <licenses>
     <license>
@@ -21,6 +23,38 @@
       <distribution>repo</distribution>
     </license>
   </licenses>
+
+  <developers>
+    <developer>
+      <id>vikas-saxena02</id>
+      <name>Vikas Saxena</name>
+      <email>vikas@raics.ai</email>
+      <organization>RAICS.AI</organization>
+      <organizationUrl>https://raics.ai</organizationUrl>
+    </developer>
+  </developers>
+
+  <scm>
+    <connection>scm:git:https://github.com/vikas-saxena02/spark-scala-archetype.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com:vikas-saxena02/spark-scala-archetype.git</developerConnection>
+    <url>https://github.com/vikas-saxena02/spark-scala-archetype</url>
+    <tag>HEAD</tag>
+  </scm>
+
+  <issueManagement>
+    <system>GitHub Issues</system>
+    <url>https://github.com/vikas-saxena02/spark-scala-archetype/issues</url>
+  </issueManagement>
+
+  <ciManagement>
+    <system>GitHub Actions</system>
+    <url>https://github.com/vikas-saxena02/spark-scala-archetype/actions</url>
+  </ciManagement>
+
+  <organization>
+    <name>RAICS.AI</name>
+    <url>https://raics.ai</url>
+  </organization>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
