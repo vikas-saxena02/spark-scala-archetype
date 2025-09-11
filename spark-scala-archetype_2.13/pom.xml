@@ -1,0 +1,15 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" ...>
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>ai.raics</groupId>
+    <artifactId>spark-scala-archetype-parent</artifactId>
+    <version>3.5.5</version>
+  </parent>
+
+  <artifactId>spark-scala-archetype-2.13</artifactId>
+  <version>3.5.5</version> <!-- independent from parent and sibling -->
+  <packaging>maven-archetype</packaging>
+  <name>spark-scala-archetype-2.12</name>
+  <description>Archetype for Spark project (Scala 2.12)</description>
+</project>
