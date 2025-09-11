@@ -8,7 +8,7 @@
 
   <groupId>ai.raics</groupId>
   <artifactId>spark-scala-archetype</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.0-SNAPSHOT</version>
   <packaging>maven-archetype</packaging>
 
   <inceptionYear>2025</inceptionYear>
@@ -56,6 +56,13 @@
     <url>https://raics.ai</url>
   </organization>
 
+  <distributionManagement>
+    <snapshotRepository>
+      <id>central</id>
+      <url>https://central.sonatype.com/repository/maven-snapshots/</url>
+    </snapshotRepository>
+  </distributionManagement>
+
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.release>17</maven.compiler.release>
@@ -63,17 +70,81 @@
 
   <build>
       <plugins>
+        <!-- Archetype Plugin -->
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-archetype-plugin</artifactId>
           <version>3.4.0</version>
         </plugin>
-	<plugin>
+        
+        <!-- Archetype Packaging Plugin -->
+	      <plugin>
       	  <groupId>org.apache.maven.archetype</groupId>
       	  <artifactId>archetype-packaging</artifactId>
       	  <version>3.2.1</version>
       	  <extensions>true</extensions>
-    	</plugin>
+    	  </plugin>
+
+        <!-- Attach sources -->
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-source-plugin</artifactId>
+          <version>3.3.0</version>
+          <executions>
+            <execution>
+              <id>attach-sources</id>
+              <goals>
+                <goal>jar</goal>
+              </goals>
+            </execution>
+          </executions>
+        </plugin>
+
+        <!-- Attach javadocs -->
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-javadoc-plugin</artifactId>
+          <version>3.6.3</version>
+          <executions>
+            <execution>
+              <id>attach-javadocs</id>
+              <goals>
+                <goal>jar</goal>
+              </goals>
+            </execution>
+          </executions>
+        </plugin>
+
+        <!-- Sign everything with GPG -->
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-gpg-plugin</artifactId>
+          <version>3.2.4</version>
+          <executions>
+            <execution>
+              <id>sign-artifacts</id>
+              <phase>verify</phase>
+              <goals>
+                <goal>sign</goal>
+              </goals>
+            </execution>
+          </executions>
+        </plugin>
+
+        <!-- Central Publisher Portal plugin -->
+        <plugin>
+          <groupId>org.sonatype.central</groupId>
+          <artifactId>central-publishing-maven-plugin</artifactId>
+          <version>0.8.0</version>
+          <extensions>true</extensions>
+          <configuration>
+            <!-- Must match the server <id> in settings.xml -->
+            <publishingServerId>central</publishingServerId>
+            <!-- Optional for CI/CD automation -->
+            <!-- <autoPublish>true</autoPublish> -->
+            <!-- <waitUntil>published</waitUntil> -->
+          </configuration>
+        </plugin>
       </plugins>
   </build>
 
