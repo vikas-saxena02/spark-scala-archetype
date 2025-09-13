@@ -14,11 +14,8 @@ Spark (Scala) starter generated from **spark-scala-archetype**.
 mvn -q clean test
 ```
 
-## Generating a Sample Project
+## Create jar
 
 ```bash
- mvn -q archetype:generate \
-  -DarchetypeGroupId=ai.raics \
-  -DarchetypeArtifactId=spark-scala-archetype \
-  -DarchetypeVersion=1.0.0 
+mvn clean package
 ```
