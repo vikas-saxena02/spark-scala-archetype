@@ -43,7 +43,7 @@
     <connection>scm:git:https://github.com/vikas-saxena02/spark-scala-archetype.git</connection>
     <developerConnection>scm:git:ssh://git@github.com:vikas-saxena02/spark-scala-archetype.git</developerConnection>
     <url>https://github.com/vikas-saxena02/spark-scala-archetype</url>
-    <tag>HEAD</tag>
+    <tag>v3.5.5_1.0.0</tag>
   </scm>
 
   <issueManagement>
