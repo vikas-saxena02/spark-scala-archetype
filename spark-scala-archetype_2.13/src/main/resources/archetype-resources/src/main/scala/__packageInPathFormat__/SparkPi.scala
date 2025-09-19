@@ -24,7 +24,7 @@ object SparkPi extends  App {
     val slices = if (args.length > 0) args(0).toInt else 2
 
     val pi: Double = computePi(spark, slices)
-    println(s"Pi is roughly ${}")
+    println(s"Pi is roughly ${pi}")
 
 
 }
