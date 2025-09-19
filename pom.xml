@@ -10,11 +10,10 @@
   <artifactId>spark-scala-archetype-parent</artifactId>
   <version>3.5.5_1.0.0</version>
   <packaging>pom</packaging>
-  <name>spark-scala-archetype-parent</name>
 
   <modules>
-    <module>spark-scala-archetype-2.12</module>
-    <module>spark-scala-archetype-2.13</module>
+    <module>spark-scala-archetype_2.12</module>
+    <module>spark-scala-archetype_2.13</module>
   </modules>
 
   <inceptionYear>2025</inceptionYear>

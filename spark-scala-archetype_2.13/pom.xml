@@ -1,4 +1,8 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" ...>
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+         https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
@@ -7,9 +11,8 @@
     <version>3.5.5_1.0.0</version>
   </parent>
 
-  <artifactId>spark-scala-archetype-2.13</artifactId>
+  <artifactId>spark-scala-archetype_2.13</artifactId>
   <version>3.5.5_1.0.0</version> <!-- independent from parent and sibling -->
   <packaging>maven-archetype</packaging>
-  <name>spark-scala-archetype-2.12</name>
-  <description>Archetype for Spark project (Scala 2.12)</description>
+  <description>Archetype for Spark project (Scala 2.13)</description>
 </project>
