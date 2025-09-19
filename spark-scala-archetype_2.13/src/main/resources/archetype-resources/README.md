@@ -1,6 +1,6 @@
 # ${artifactId}
 
-Spark (Scala) starter generated from **spark-scala-archetype**.
+Spark (Scala) starter generated from **spark-scala-archetype_2.13**.
 
 - **Scala**: 2.13.8
 - **Spark**: 3.5.5  
