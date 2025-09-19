@@ -5,7 +5,7 @@
 
   <requiredProperties>
     <requiredProperty key="package">
-      <defaultValue>ai.raics.${artifactId}</defaultValue>
+      <defaultValue>${groupId}</defaultValue>
     </requiredProperty>
   </requiredProperties>
 

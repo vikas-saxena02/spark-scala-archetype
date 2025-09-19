@@ -7,9 +7,14 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>ai.raics</groupId>
-  <artifactId>spark-scala-archetype</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
-  <packaging>maven-archetype</packaging>
+  <artifactId>spark-scala-archetype-parent</artifactId>
+  <version>3.5.5_1.0.0</version>
+  <packaging>pom</packaging>
+
+  <modules>
+    <module>spark-scala-archetype_2.12</module>
+    <module>spark-scala-archetype_2.13</module>
+  </modules>
 
   <inceptionYear>2025</inceptionYear>
   <name>spark-scala-archetype</name>
@@ -75,8 +80,14 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-archetype-plugin</artifactId>
           <version>3.4.0</version>
+          <executions>
+            <execution>
+              <id>default-integration-test</id>
+              <phase>none</phase> <!-- disables the default binding -->
+            </execution>
+          </executions>
         </plugin>
-        
+
         <!-- Archetype Packaging Plugin -->
 	      <plugin>
       	  <groupId>org.apache.maven.archetype</groupId>

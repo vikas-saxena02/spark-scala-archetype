@@ -4,12 +4,24 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
-# my specifc
+# my env specifc
 .vscode
 .metals
 .bloop
 target/
-archetype-resources/.vscode
-archetype-resources/.metals
-archetype-resources/.bloop
-archetype-resources/target
+spark-scala-archetype_2.12/target
+spark-scala-archetype_2.12/.vscode
+spark-scala-archetype_2.12/.metals
+spark-scala-archetype_2.12/.bloop
+spark-scala-archetype_2.12/src/main/resources/archetype-resources/target
+spark-scala-archetype_2.12/src/main/resources/archetype-resources/.vscode
+spark-scala-archetype_2.12/src/main/resources/archetype-resources/.bloop
+spark-scala-archetype_2.12/src/main/resources/archetype-resources/.metals
+spark-scala-archetype_2.13/target
+spark-scala-archetype_2.13/.vscode
+spark-scala-archetype_2.13/.metals
+spark-scala-archetype_2.13/.bloop
+spark-scala-archetype_2.13/src/main/resources/archetype-resources/target
+spark-scala-archetype_2.13/src/main/resources/archetype-resources/.vscode
+spark-scala-archetype_2.13/src/main/resources/archetype-resources/.bloop
+spark-scala-archetype_2.13/src/main/resources/archetype-resources/.metals
