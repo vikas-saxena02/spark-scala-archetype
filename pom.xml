@@ -17,8 +17,8 @@
   </modules>
 
   <inceptionYear>2025</inceptionYear>
-  <name>spark-scala-archetype</name>
-  <description>Maven archetype for Spark application development</description>
+  <name>spark-scala-archetype-parent</name>
+  <description>Parent for Maven archetype for Spark application development</description>
   <url>https://github.com/vikas-saxena02/spark-scala-archetype</url>
 
   <licenses>

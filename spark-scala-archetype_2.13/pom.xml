@@ -15,4 +15,5 @@
   <version>3.5.5_1.0.0</version> <!-- independent from parent and sibling -->
   <packaging>maven-archetype</packaging>
   <description>Archetype for Spark project (Scala 2.13)</description>
+  <name>spark-scala-archetype_2.13</name>
 </project>
