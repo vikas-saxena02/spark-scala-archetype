@@ -21,6 +21,9 @@ object SparkPi extends  App {
       .master("local[*]")
       .appName("Spark Pi")
       .getOrCreate()
+
+    println(s"Spark Version: ${spark.version}")
+    
     val slices = if (args.length > 0) args(0).toInt else 2
 
     val pi: Double = computePi(spark, slices)
