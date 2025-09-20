@@ -22,11 +22,3 @@ Spark Archetype in Scala by RAICS.AI
   -DarchetypeArtifactId=spark-scala-archetype_2.13 \
   -DarchetypeVersion=3.5.6_1.0.0 
 ```
-
-## Details for project Generated
-
-- **Scala**: 2.12.18  
-- **Spark**: 3.5.6  
-- **Tests**: ScalaTest
-
-> Requires **Java 17+**. Ensure `JAVA_HOME` points to a JDK 17.
