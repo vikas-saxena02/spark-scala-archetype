@@ -7,6 +7,9 @@ Spark Archetype in Scala by RAICS.AI
 
 ## Generating a Sample Project
 ### For Scala 2.12
+> [!CAUTION]
+> This Module is in maintainence mode only
+
 ```bash
  mvn -q archetype:generate \
   -DarchetypeGroupId=ai.raics \
