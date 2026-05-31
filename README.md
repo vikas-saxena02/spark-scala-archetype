@@ -14,7 +14,7 @@ Spark Archetype in Scala by RAICS.AI
  mvn -q archetype:generate \
   -DarchetypeGroupId=ai.raics \
   -DarchetypeArtifactId=spark-scala-archetype_2.12 \
-  -DarchetypeVersion=3.5.6_1.0.0 
+  -DarchetypeVersion=3.5.7_1.0.0 
 ```
 > Please note that the module `spark-scala-archetype_2.12` is only supported for spark 3.5.5 and 3.5.6. With Spark 4.0.0, Apache Spark will no longer have support for scala 2.12 and hence the module will be deprecated. It will no longer be Supported after Spark 3.5 series goes EOL.
 
@@ -23,5 +23,5 @@ Spark Archetype in Scala by RAICS.AI
  mvn -q archetype:generate \
   -DarchetypeGroupId=ai.raics \
   -DarchetypeArtifactId=spark-scala-archetype_2.13 \
-  -DarchetypeVersion=4.0.1_1.0.0 
+  -DarchetypeVersion=3.5.7_1.0.0 
 ```
