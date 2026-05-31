@@ -16,7 +16,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <scala.version>2.13.16</scala.version>
     <scala.binary.version>2.13</scala.binary.version>
-    <spark.version>4.0.1</spark.version>
+    <spark.version>3.5.7</spark.version>
     <maven.compiler.release>17</maven.compiler.release>
 
     <scalatest.version>3.2.19</scalatest.version>
