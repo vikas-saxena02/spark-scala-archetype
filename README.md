@@ -1,5 +1,5 @@
 # spark-scala-archetype
-Spark Archetype in Scala by RAICS.AI
+Apache Spark Archetype in Scala by RAICS.AI
 
 ## Requirements
 - **JDK**: JDK-17 or above
@@ -23,5 +23,5 @@ Spark Archetype in Scala by RAICS.AI
  mvn -q archetype:generate \
   -DarchetypeGroupId=ai.raics \
   -DarchetypeArtifactId=spark-scala-archetype_2.13 \
-  -DarchetypeVersion=4.1.0_1.0.0 
+  -DarchetypeVersion=4.1.1_1.0.0 
 ```
