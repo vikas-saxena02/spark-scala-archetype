@@ -8,17 +8,16 @@
 
   <groupId>ai.raics</groupId>
   <artifactId>spark-scala-archetype-parent</artifactId>
-  <version>4.0.1_1.0.0</version>
+  <version>4.1.2_1.0.0</version>
   <packaging>pom</packaging>
 
   <modules>
-    <module>spark-scala-archetype_2.12</module>
     <module>spark-scala-archetype_2.13</module>
   </modules>
 
   <inceptionYear>2025</inceptionYear>
   <name>spark-scala-archetype-parent</name>
-  <description>Maven archetype for Spark application development</description>
+  <description>Maven archetype for Apache Spark application development</description>
   <url>https://github.com/vikas-saxena02/spark-scala-archetype</url>
 
   <licenses>
