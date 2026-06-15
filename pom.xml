@@ -8,11 +8,10 @@
 
   <groupId>ai.raics</groupId>
   <artifactId>spark-scala-archetype-parent</artifactId>
-  <version>4.0.1_1.0.0</version>
+  <version>4.0.3_1.0.0</version>
   <packaging>pom</packaging>
 
   <modules>
-    <module>spark-scala-archetype_2.12</module>
     <module>spark-scala-archetype_2.13</module>
   </modules>
 
